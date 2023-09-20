@@ -1,0 +1,108 @@
+{
+  "editor.detectIndentation": false, // vscode默认启用了根据文件类型自动设置tabsize的选项
+  "editor.tabSize": 2, // 重新设定tabsize
+  "editor.formatOnSave": true, // #每次保存的时候自动格式化
+  // 在使用搜索功能时，将这些文件夹/文件排除在外
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/target": true,
+    "**/logs": true,
+    "**/dist": true
+  },
+  // 这些文件将不会显示在工作空间中
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.js": {
+      "when": "$(basename).ts" //ts编译后生成的js文件将不会显示在工作空中
+    }
+    // "**/node_modules": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    // 显示空格
+    "editor.renderWhitespace": "all",
+    // 快速补全
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    },
+    // snippet 提示优先
+    "editor.snippetSuggestions": "top",
+    "editor.tabCompletion": "on",
+    // 使用enter 接受提示
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.defaultFormatter": "IricBing.iricbing-markdown-formatter"
+  },
+  "typescript.preferences.importModuleSpecifier": "relative", // 使用相对路径
+  "javascript.preferences.importModuleSpecifier": "relative", // 使用相对路径
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
+  "bookmarks.saveBookmarksInProject": true,
+  "clang-format.executable": "/usr/bin/clang-format", //环境中需要安装 clang-format 软件
+  "clang-format.style": "google",
+  "cSpell.words": [
+    "accm",
+    "alertor",
+    "aliyun",
+    "amap",
+    "appender",
+    "backoff",
+    "captchas",
+    "clickhouse",
+    "clientid",
+    "CMCC",
+    "compodoc",
+    "crontabs",
+    "datas",
+    "dtos",
+    "emqx",
+    "ezviz",
+    "firmwares",
+    "Gprs",
+    "groupid",
+    "headimgurl",
+    "hget",
+    "hgetall",
+    "hmset",
+    "hmsetex",
+    "iccid",
+    "ILIKE",
+    "imei",
+    "imsi",
+    "jxcloud",
+    "lnglat",
+    "metatype",
+    "middlewares",
+    "msisdn",
+    "mxhichina",
+    "nestjs",
+    "ntegral",
+    "rpush",
+    "rtmp",
+    "rtsp",
+    "setex",
+    "smsid",
+    "srid",
+    "tagid",
+    "typeorm",
+    "ucpaas",
+    "unionid",
+    "vcom",
+    "websockets",
+    "wechat",
+    "xuyu"
+  ]
+}
